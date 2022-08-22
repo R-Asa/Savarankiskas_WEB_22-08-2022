@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    min-width: 300px;
+    max-width: 1400px;
+}
+
+section {
+    max-width: 1400px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(164, 163, 163);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-logo {
+    height: 50px;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(40, 38, 38);
+    font-size: 15px;
+    letter-spacing: 1;
+}
+
+.container-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-info {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.figure {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.galery-item-1 {
+    background-image: url(./images/Orange-flower.jpg);
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+    color: white;
+}
+
+.galery-item-1 p{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 125px;
+}
+
+.galery-item-2 {
+    background-image: url(./images/Pine-tree.jpg);
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    color: white;
+}
+
+.galery-item-2 p{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 125px;
+}
+
+.galery-item-3 {
+    background-image: url(./images/White-narcissus.jpg);
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    color: white;
+}
+
+.galery-item-3 p{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 125px;
+}
+
+@media only screen and (max-width: 992px) {
+    .galery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+        justify-content: center
+    }
+
+    .nav-list li {
+      display: none;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .galery {
+      grid-template-columns: auto;
+    }
+  }
